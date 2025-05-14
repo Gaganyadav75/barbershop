@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navs = ["Home","About","Services","Gallery","Contact"]
@@ -7,25 +8,15 @@ const Header = () => {
     <header className="sticky top-0 w-full z-50 transition-all duration-300 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a className="flex items-center" href="/">
-            {/* <img
-              alt="Logo"
-              width="120"
-              height="40"
-              decoding="async"
-              className="h-10 w-auto"
-              srcSet="https://pmcbarber.devfrend.com/_next/image?url=%2Fimages%2Fpmcbarber%2Flogo.webp&w=256&q=75"
-              src="https://pmcbarber.devfrend.com/_next/image?url=%2Fimages%2Fpmcbarber%2Flogo.webp&w=256&q=75"
-              style={{ color: 'transparent' }}
-            /> */}
+          <Link className="flex items-center" href="/">
             <h1 className='text-primary text-2xl font-bold'>FAMA</h1>
-          </a>
+          </Link>
           <nav className="items-center gap-6 hidden md:flex">
             {Navs.map((ele,idx)=>{
                 return <li className=' list-none' key={idx}>
-                <a className="text-base font-medium text-foreground hover:text-primary transition-colors" href={`#${ele.toLowerCase()}`}>
+                <Link className="text-base font-medium text-foreground hover:text-primary transition-colors" href={`#${ele.toLowerCase()}`}>
                     {ele}
-                </a>
+                </Link>
                 </li>
             })}
           </nav>
@@ -61,12 +52,12 @@ const Header = () => {
               </svg>
               <span>+19408081569</span>
             </div>
-            <a
+            <Link
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
               href="#contact"
             >
               Book an Appointment
-            </a>
+            </Link>
           </div>
           <div className="block lg:hidden">
             <button

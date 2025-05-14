@@ -93,7 +93,7 @@ const FormCard = () => {
               <option value="Beard Trim">Beard Trim</option>
               <option value="Hot Towel Shave">Hot Towel Shave</option>
               <option value="Haircut & Beard Combo">Haircut & Beard Combo</option>
-              <option value="Kid's Haircut">Kid's Haircut</option>
+              <option value="Kid's Haircut">Kid&apos;s Haircut</option>
               <option value="Senior Haircut">Senior Haircut</option>
               <option value="Other">Other</option>
             </select>

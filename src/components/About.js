@@ -34,10 +34,10 @@ const AboutSection = () => {
             <div className="transition-all duration-500 opacity-100">
               <div className="text-muted-foreground leading-7 p-6 rounded-lg relative bg-muted/80 hover:bg-muted/90 transition-colors duration-300 hover:shadow-md group mb-6">
                 <span className="absolute top-0 left-4 text-5xl leading-none text-primary/40 font-serif transform group-hover:scale-110 group-hover:rotate-12 group-hover:text-primary/60 transition-all duration-500">
-                  "
+                  &quot;
                 </span>
                 <p className="relative group-hover:translate-x-1 transition-all duration-300">
-                  We take pride in our attention to detail and personalized service, ensuring each client leaves looking and feeling their best. Our skilled barbers combine traditional techniques with modern trends to create custom styles that suit each individual's personality and lifestyle.
+                  We take pride in our attention to detail and personalized service, ensuring each client leaves looking and feeling their best. Our skilled barbers combine traditional techniques with modern trends to create custom styles that suit each individual&apos;s personality and lifestyle.
                 </p>
                 <div className="absolute bottom-4 left-6 right-6 h-[1px] bg-primary/0 group-hover:bg-primary/20 transition-all duration-500"></div>
               </div>

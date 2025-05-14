@@ -15,7 +15,7 @@ const CTASection = () => {
             Ready for a Fresh Cut?
           </h2>
           <p className="text-lg text-white/90 mb-10">
-            Visit PMC Barbershop for premium men's grooming services. Our expert barbers are ready to give you a clean, precise cut and a relaxing barbershop experience.
+            Visit PMC Barbershop for premium men&apos;s grooming services. Our expert barbers are ready to give you a clean, precise cut and a relaxing barbershop experience.
           </p>
           
           {/* Buttons */}

@@ -197,9 +197,9 @@ export const TestimonialCard = ({data }) => (
     <div className="absolute bottom-0 right-0 w-24 h-24 bg-primary/10 rounded-tl-full z-0" />
     <div className="px-6 pt-10 pb-6 relative z-10">
       <p className="text-lg leading-relaxed text-foreground mb-8 italic relative">
-        <span className="absolute -top-6 -left-2 text-5xl text-primary/15 font-serif">"</span>
+        <span className="absolute -top-6 -left-2 text-5xl text-primary/15 font-serif">&quot;</span>
         {data.text}
-        <span className="absolute -bottom-12 right-0 text-5xl text-primary/10 font-serif">"</span>
+        <span className="absolute -bottom-12 right-0 text-5xl text-primary/10 font-serif">&quot;</span>
       </p>
     </div>
     <div className="px-6 pt-4 border-t border-border flex items-center">
