@@ -1,23 +1,95 @@
 @import "tailwindcss";
 
+/* Root level color variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #1A1A1A;
+    --foreground: #FFFFFF;
+    --card: #222222;
+    --card-foreground: #FFFFFF;
+    --popover: #222222;
+    --popover-foreground: #FFFFFF;
+    --primary: #F4BF37;
+    --primary-foreground: #1A1A1A;
+    --secondary: #1E1E1E;
+    --secondary-foreground: #FFFFFF;
+    --muted: #2D2D2D;
+    --muted-foreground: #FFFFFF;
+    --accent: #D4AF37;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #1A1A1A;
+    --border: #3D3D3D;
+    --input: #3D3D3D;
+    --ring: #F4BF37;
+    --radius: 0.5rem;
+
+    /* Tailwind-specific colors */
+    --tw-color-primary: #F4BF37;
+    --tw-color-primary-hover: #E0AA0F;
+    --tw-color-secondary: #1E1E1E;
+    --tw-color-secondary-hover: #000000;
+    --tw-color-accent: #D4AF37;
+    --tw-color-accent-hover: #B8960B;
+    --tw-color-background: #1A1A1A;
+    --tw-color-foreground: #FFFFFF;
+    --tw-color-muted: #2D2D2D;
+    --tw-color-border: #3D3D3D;
+    --tw-color-card: #222222;
+    --tw-color-card-foreground: #FFFFFF;
+    --tw-color-error: #EF4444;
+    --tw-color-success: #10B981;
+
+    /* Additional color settings */
+    --footer: #1A1A1A;
+    --footerText: #FFFFFF;
+    --overlayDark: rgba(26, 26, 26, 0.9);
+    --overlayLight: rgba(26, 26, 26, 0.5);
+    --overlayMedium: rgba(26, 26, 26, 0.7);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Theme Customization */
+@theme {
+    /* Colors */
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primaryHover);
+    --color-secondary: var(--secondary);
+    --color-secondary-hover: var(--secondaryHover);
+    --color-accent: var(--accent);
+    --color-accent-hover: var(--accentHover);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-border: var(--border);
+    --color-card: var(--card);
+    --color-card-foreground: var(--cardForeground);
+    --color-error: var(--error);
+    --color-success: var(--success);
+    --color-footer: var(--footer);
+    --color-footer-text: var(--footerText);
+    --color-overlay-dark: var(--overlayDark);
+    --color-overlay-light: var(--overlayLight);
+    --color-overlay-medium: var(--overlayMedium);
+
+    /* Borders */
+    --border-radius: var(--radius);
+    
+    /* Backgrounds */
+    --background: var(--background);
+    --foreground: var(--foreground);
+
+    /* Ring & Focus */
+    --ring-color: var(--ring);
+
+    /* Font settings (optional, modify according to your needs) */
+    --font-sans: 'Geist-Sans', sans-serif;
+    --font-mono: 'Geist-Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,* {
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   background: var(--background);
